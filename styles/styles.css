@@ -1,0 +1,70 @@
+.container {
+    max-width: 1440px;
+}
+
+.background {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+}
+
+a:hover, a:visited, a:link, a:active {
+    color: #FFF;
+}
+
+.navbar {
+    width: 1231px;
+    height: 14px;
+    margin: 0 auto;
+}
+/* inherit используется для унаследования чего - то от родительского тега
+в нашем случае унаследована высота от класса navbar 
+тут это использовалось для того, чтобы выровнять логотип и элементы меню на одном*/
+.navbar .navbar-container {
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 54px;
+}
+
+.navbar-menu-center {
+    list-style-type: none;
+}
+/* по умолчанию li - блочный элемнет и занимает 100% ширины в пределах родителя, мы меняем на inline-flex  
+но можно и просто inline-block*/
+.navbar-menu-center li {
+    display: inline-block;
+}
+
+.navbar-menu-center li a{
+    display: inline-flex;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 14.06px;
+    color: #FFF;
+    padding: 0 20px 0 0;
+}
+
+.navbar-menu-right li {
+    display: inline-flex;
+}
+
+.navbar-menu-right li a{
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 14.06px;
+    color: #FFF;
+    padding: 0 20px 0 0;
+}
+
+.navbar-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
