@@ -1,9 +1,11 @@
 .container {
-    max-width: 1440px;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .background {
     background-color: #000;
+    overflow-x: hidden;
 }
 
 a {
@@ -19,26 +21,26 @@ a:hover, a:visited, a:link, a:active {
     width: 1231px;
     height: 14px;
     margin: 0 auto;
-}
+} 
 /* inherit используется для унаследования чего - то от родительского тега
 в нашем случае унаследована высота от класса navbar 
 тут это использовалось для того, чтобы выровнять логотип и элементы меню на одном*/
 .navbar .navbar-container {
     height: inherit;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 54px;
 }
 
 .navbar-menu-center {
     list-style-type: none;
-}
+} 
 /* по умолчанию li - блочный элемнет и занимает 100% ширины в пределах родителя, мы меняем на inline-flex  
 но можно и просто inline-block*/
 .navbar-menu-center li {
     display: inline-block;
-}
+} 
 
 .navbar-menu-center li a{
     display: inline-flex;
@@ -53,7 +55,6 @@ a:hover, a:visited, a:link, a:active {
 .navbar-menu-right li {
     display: inline-flex;
 }
-
 .navbar-menu-right li a{
     display: inline-block;
     font-family: Roboto, sans-serif;
@@ -62,9 +63,150 @@ a:hover, a:visited, a:link, a:active {
     line-height: 14.06px;
     color: #FFF;
     padding: 0 20px 0 0;
-}
+} 
 
 .navbar-wrapper {
     display: flex;
     flex-flow: row nowrap;
+} 
+
+.main-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFF;
+    text-align: center;
+    margin-top: 122px;
 }
+
+.falcon-heavy-intro {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22.4px;
+    color: #FFF;
+    text-align: center;
+    margin-top: 24px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+#falcon-heavy {
+    margin-left: 150px;
+}
+
+.falcon-heavy-values {
+    margin-left: 130px;
+}
+.falcon-heavy-values span {
+    color: #b2b0b2;
+}
+
+
+.falcon-heavy-overview {
+    display: inline-flex;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33.6px;
+    color: #FFF;
+}
+.falcon-heavy-h3-title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+}
+
+.falcon-heavy-img {
+    position: absolute;
+    width: 644px;
+    height: 1718px;
+    left: 691px;
+    top: 1307px;
+}
+
+.vertical-line {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.falcon-heavy-performance h3{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+}
+
+.falcon-heavy-performance p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+    width: 490px;
+}
+
+.falcon-heavy-performance {
+    margin-top: 218px;
+}
+
+#footer {
+    margin-top: 835px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer p {
+    color: #b2b0b2;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+.btn-contact-us {
+    margin-top: 30px;
+    margin-bottom: 131px;
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+    border-radius: 6px;
+    padding: 20px 87px 20px 87px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.footer-menu li a{
+    display: inline-flex;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 14.06px;
+    color: #FFF;
+    padding: 0 20px 0 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding-top: 43px;
+} 
